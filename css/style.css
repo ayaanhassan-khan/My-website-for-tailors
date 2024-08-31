@@ -1,5 +1,5 @@
 :root {
-    --main-color: #F1F3F2;
+    --main-color: orange;
 }
 
 * {
@@ -19,6 +19,10 @@ nav div a img {
     height: 70px;
 }
 
+nav button.navbar-toggler {
+    color: white;
+}
+
 nav .navbar-nav {
     margin-left: auto;
 }
@@ -27,3 +31,6 @@ nav .navbar-nav li {
     align-self: center;
 }
 
+nav button.signin:hover {
+    color: var(--main-color);
+}
