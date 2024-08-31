@@ -1,0 +1,7 @@
+section#home .container:first-child {
+    width: 2500px;
+}
+
+section#home h1 {
+    margin: 100px 0;
+}
