@@ -33,10 +33,6 @@ nav .navbar-nav {
     margin-left: auto;
 }
 
-/* nav .navbar-nav li {
-    align-self: center;
-} */
-
 nav li.dropdown ul {
     background-color: white;
 }
