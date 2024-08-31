@@ -1,0 +1,29 @@
+:root {
+    --main-color: #F1F3F2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+
+nav {
+    background-color: var(--main-color);
+}
+
+nav div a img {
+    width: 200px;
+    height: 70px;
+}
+
+nav .navbar-nav {
+    margin-left: auto;
+}
+
+nav .navbar-nav li {
+    align-self: center;
+}
+
