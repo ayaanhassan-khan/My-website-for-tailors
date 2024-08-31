@@ -1,11 +1,16 @@
 :root {
-    --main-color: orange;
+    --main-color: rgb(255, 165, 0);
+    --bs-btn-active-color: #fff;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html, body {
+    font-family: "Quicksand", sans-serif;
 }
 
 /* Navbar */
@@ -31,6 +36,23 @@ nav .navbar-nav li {
     align-self: center;
 }
 
+nav li.dropdown ul {
+    background-color: white;
+}
+
+nav li.dropdown ul a {
+    color: black;
+}
+
+nav li.dropdown ul a:hover {
+    color: black;
+    background-color: rgba(255, 165, 0, 0.5);
+}
+
 nav button.signin:hover {
     color: var(--main-color);
+}
+
+section#home .container:first-child {
+    width: 2500px;
 }
