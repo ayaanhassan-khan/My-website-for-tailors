@@ -1,5 +1,6 @@
 :root {
     --main-color: rgb(255, 165, 0);
+    --main-trans: rgba(255, 165, 0, 0.5);
     --bs-btn-active-color: #fff;
 }
 
@@ -32,9 +33,9 @@ nav .navbar-nav {
     margin-left: auto;
 }
 
-nav .navbar-nav li {
+/* nav .navbar-nav li {
     align-self: center;
-}
+} */
 
 nav li.dropdown ul {
     background-color: white;
@@ -46,13 +47,19 @@ nav li.dropdown ul a {
 
 nav li.dropdown ul a:hover {
     color: black;
-    background-color: rgba(255, 165, 0, 0.5);
+    background-color: var(--main-trans);
 }
 
 nav button.signin:hover {
     color: var(--main-color);
 }
 
+/* Navbar */
+
 section#home .container:first-child {
     width: 2500px;
+}
+
+section#home h1 {
+    margin: 100px 0;
 }
