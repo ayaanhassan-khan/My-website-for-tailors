@@ -48,6 +48,11 @@ nav li.dropdown ul a:hover {
     background-color: var(--main-trans);
 }
 
+nav .dropdown-item.active {
+    background-color: var(--main-light);
+    color: black;
+}
+
 nav button.signin:hover {
     color: var(--main-color);
 }
