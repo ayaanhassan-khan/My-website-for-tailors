@@ -82,9 +82,18 @@
         display: inline-block;
         letter-spacing: 1px;
         cursor: pointer;
+        transition: all 1s;
+}
+
+.information .btn:hover{
+        border: 2px solid red;
+        font-size: 19px;
+        color: white;
+        padding: 13px 25px;
+        background-color: red;
 }
     
-.information .btn::before{
+/* .information .btn::before{
         position: absolute;
         border: 1px solid transparent;
         left: 0;
@@ -97,7 +106,7 @@
         transform-origin: 0 0;
         transition-timing-function: cubic-bezier(0.5, 1.5, 0.4, 0.7);
         transform: scale(0);
-}
+} */
     
 .image{
         width: 50%;
