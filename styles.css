@@ -1,11 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-:root {
-  --primary-color: #e5c641;
-  --text-dark: #000000;
+* {
   --text-light: #737373;
   --white: #ffffff;
-max-width: 10000px;
+max-width: 1400px;
 }
 
 .section__container {
@@ -17,7 +15,7 @@ max-width: 10000px;
   isolation: isolate;
   font-size: 2.5rem;
   font-weight: 900;
-  color: var(--text-dark);
+  color: black;
 }
 
 .section__header::before {
@@ -64,21 +62,22 @@ header {
 }
 
 .header__content {
-  padding: 5rem 2rem;
+  padding: 5rem 1rem;
 }
 
 .header__content h1 {
   margin-bottom: 1rem;
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 900;
   line-height: 5.5rem;
-  color: var(--text-dark);
+  color: black;
   text-align: center;
+display: flex;
+align-items: center;
 }
 
 .header__content h1 span {
   position: relative;
-  isolation: isolate;
 }
 
 .header__content h1 span::before {
@@ -97,29 +96,24 @@ header {
 }
 
 .header__content h1 span:nth-child(4)::before {
-  background-color: var(--primary-color);
+  background-color: #0D6EFD;
 }
 
 .header__content p {
   margin-bottom: 2rem;
   font-size: 1.2rem;
   font-weight: 500;
-  color: var(--text-dark);
+  color: black;
   text-align: center;
 }
 
-.header__image img {
-  max-width: 500px;
-  margin-inline: auto;
-}
-
-.banner {
+.way {
   padding-block: 4rem;
   overflow: hidden;
-  background-color: var(--primary-color);
+  background-color: #e5c641;
 }
 
-.banner__container {
+.way__container {
   width: max-content;
   display: flex;
   align-items: center;
@@ -128,7 +122,7 @@ header {
   animation: scroll 45s linear infinite;
 }
 
-.banner__container img {
+.way__container img {
   height: 30px;
 }
 
@@ -181,7 +175,7 @@ header {
 .arrival__content h4 {
   font-size: 1.5rem;
   font-weight: 500;
-  color: var(--text-dark);
+  color: black;
 }
 
 .arrival__content a {
@@ -191,7 +185,7 @@ header {
 }
 
 .arrival__content a:hover {
-  color: var(--primary-color);
+  color: #e5c641;
 }
 
 .arrival__content span {
@@ -200,7 +194,7 @@ header {
 }
 
 .sale {
-  background-color: var(--primary-color);
+  background-color: #e5c641;
 }
 
 .sale__container {
@@ -213,7 +207,7 @@ header {
 .sale__image img {
   max-width: 500px;
   margin-inline: auto;
-  filter: drop-shadow(20px 20px 15px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(60px 60px 35px rgba(0, 0, 0, 0.5));
 }
 
 .sale__content {
@@ -232,33 +226,21 @@ header {
   isolation: isolate;
 }
 
-.sale__content h2 span::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: -1rem;
-  height: calc(100% - 10px);
-  width: calc(100% + 4rem);
-  background-color: var(--white);
-  transform: rotate(-2deg);
-  z-index: -1;
-}
-
 .sale__content p {
   margin-bottom: 2rem;
   font-size: 1.2rem;
   font-weight: 500;
-  color: var(--text-dark);
+  color: black;
 }
 
 .sale__content h4 {
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--text-dark);
+  color: black;
 }
 
 .sale__btn .btn:hover {
-  color: var(--text-dark);
+  color:black;
   background-color: var(--white);
 }
 
@@ -309,7 +291,7 @@ header {
 .favourite__content h4 {
   font-size: 1.5rem;
   font-weight: 500;
-  color: var(--text-dark);
+  color: black;
 }
 
 .favourite__content a {
@@ -319,7 +301,7 @@ header {
 }
 
 .favourite__content a:hover {
-  color: var(--primary-color);
+  color: #e5c641;
 }
 
 .favourite__content span {
@@ -361,7 +343,7 @@ header {
 }
 
 .promo {
-  background-color: var(--primary-color);
+  background-color: #e5c641;
 }
 
 .promo__container .section__header {
@@ -397,7 +379,7 @@ header {
   outline: none;
   border: none;
   font-size: 1rem;
-  color: var(--text-dark);
+  color: black;
 }
 
 
@@ -412,19 +394,6 @@ header {
   }
 }
 
-@media (width > 768px) {
-  nav {
-    position: static;
-    max-width: var(--max-width);
-    margin-inline: auto;
-    padding: 2rem 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-  }
-
-
   .header__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -433,21 +402,6 @@ header {
 
   .header__content :is(h1, p, .header__btns) {
     text-align: left;
-  }
-
-  .header__image {
-    position: relative;
-    height: 100%;
-  }
-
-  .header__image img {
-    position: absolute;
-    width: unset;
-    max-width: unset;
-    height: 100%;
-    right: 1rem;
-    top: 2rem;
-    z-index: -1;
   }
 
   .arrival__grid {
@@ -484,5 +438,3 @@ header {
   .download__links {
     justify-content: flex-start;
   }
-
-}
