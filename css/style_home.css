@@ -1,7 +1,13 @@
-section#home .container:first-child {
+.container:first-child {
     width: 2500px;
 }
 
-section#home h1 {
+h1 {
     margin: 100px 0;
+}
+
+section button a,
+section button a:hover {
+    color: white;
+    text-decoration: none !important;
 }
