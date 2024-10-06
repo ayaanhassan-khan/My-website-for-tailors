@@ -12,18 +12,9 @@
 }
 
 img {
-  display: flex;
   width: 100%;
 }
 
-ul {
-  list-style: none;
-}
-
-html,
-body {
-  scroll-behavior: smooth;
-}
 
 body {
   font-family: "Poppins", sans-serif;
