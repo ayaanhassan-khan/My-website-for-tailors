@@ -88,9 +88,6 @@
 }
 
 .information .btn:hover{
-        border: 2px solid red;
-        font-size: 19px;
-        color: white;
         padding: 13px 25px;
         background-color: red;
 }
