@@ -100,3 +100,13 @@
         width: 100%;
         height: auto;
 }
+
+.choose {
+    background-color: white;
+    padding: 20px;
+}
+
+.choose h1,
+.choose p {
+    text-align: center;
+}

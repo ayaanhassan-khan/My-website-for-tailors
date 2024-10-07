@@ -12,7 +12,7 @@
 }
 
 html, body {
-    font-family: "Quicksand", sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: var(--main-light);
 }
 
@@ -33,24 +33,6 @@ nav button.navbar-toggler {
 
 nav .navbar-nav {
     margin-left: auto;
-}
-
-nav li.dropdown ul {
-    background-color: white;
-}
-
-nav li.dropdown ul a {
-    color: black;
-}
-
-nav li.dropdown ul a:hover {
-    color: black;
-    background-color: var(--main-trans);
-}
-
-nav .dropdown-item.active {
-    background-color: var(--main-light);
-    color: black;
 }
 
 nav button.signin:hover {
