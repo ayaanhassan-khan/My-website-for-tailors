@@ -35,8 +35,14 @@ nav .navbar-nav {
     margin-left: auto;
 }
 
+nav button.signin {
+    width: 80px;
+    transition: all 1s;
+}
+
 nav button.signin:hover {
     color: var(--main-color);
+    width: 100px;
 }
 
 /* Navbar */
