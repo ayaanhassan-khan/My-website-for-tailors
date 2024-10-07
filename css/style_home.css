@@ -1,22 +1,171 @@
-.container:first-child {
-    width: 2500px;
-}
+/* Home Page */
 
-h1 {
-    margin: 100px 0;
-}
-
-section .btn {
-    width: 130px;
-    transition: all 1s !important;
-}
-
-section .btn:hover {
-    width: 170px;
-}
-
-section button a,
-section button a:hover {
+.tt-section__container {
+    margin: auto;
+    padding: 5rem 1rem;
+  }
+  
+  .tt-section__title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    color: black;
+  }
+  
+  
+  .tt-shopbtn {
+    padding: 0.75rem 2rem;
+    font-size: 0.8rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  
+  .tt-sale__card img {
+    width: 100%;
+    display: block;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  header {
+    background-color: #80B3FF;
+  }
+  
+  .tt-header__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .tt-header__content p {
+    font-size: 2rem;
+    font-weight: 600;
     color: white;
-    text-decoration: none !important;
-}
+    margin-bottom: 0.5rem;
+  }
+  
+  .tt-header__content h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: black;
+  }
+  
+  .tt-header__content .btn {
+    background-color: black;
+    color: white;
+  }
+  
+  .tt-header__image {
+    position: relative;
+  }
+  
+  .tt-header__image img {
+    max-width: 730px;
+    bottom: -5rem;
+  }
+  
+  .tt-sale__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .tt-sale__card {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .tt-sale__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: #80B3FF;
+    text-align: center;
+  }
+  
+  .tt-sale__title {
+    font-size: 2.5rem;
+    font-weight: 1000;
+  }
+  
+  .tt-sale__title span {
+    font-size: 2.5rem;
+  }
+  
+  .tt-sale__subtitle {
+    font-size: 1rem;
+  }
+  
+  .tt-sale__btn {
+    margin-top: 2rem;
+    color: white;
+    background-color: black;
+  }
+  
+  
+  .tt-sale__card:hover .tt-sale__btn {
+    color: black;
+    background-color: white;
+  }
+  
+  .tt-brands__container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+  }
+  
+  .tt-brand__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .tt-brand__image img {
+    max-width: 120px;
+  }
+  
+  .tt-brand__image:hover {
+    opacity: 1;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 900px) {
+    header {
+      margin-top: 5rem;
+    }
+    .tt-sale__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .tt-brands__container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    header {
+      margin-top: 0;
+    }
+    .tt-header__container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .tt-header__image {
+      display: none;
+    }
+    .tt-sale__grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .tt-brands__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
