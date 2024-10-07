@@ -35,26 +35,14 @@ nav .navbar-nav {
     margin-left: auto;
 }
 
-nav li.dropdown ul {
-    background-color: white;
-}
-
-nav li.dropdown ul a {
-    color: black;
-}
-
-nav li.dropdown ul a:hover {
-    color: black;
-    background-color: var(--main-trans);
-}
-
-nav .dropdown-item.active {
-    background-color: var(--main-light);
-    color: black;
+nav button.signin {
+    width: 80px;
+    transition: all 1s;
 }
 
 nav button.signin:hover {
     color: var(--main-color);
+    width: 100px;
 }
 
 /* Navbar */

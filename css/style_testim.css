@@ -1,0 +1,84 @@
+.top{
+    color: white;
+    text-align: center;
+    font-size: 58px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+#testimonials {
+    background-color:#80B3FF;
+    padding: 50px 0;
+}
+
+.testimonial {
+    background-color: #80B3FF;
+    border-left: 4px solid #ff9900;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.testimonial .quote {
+    font-size: 24px;
+    color: red;
+}
+
+.testimonial .description {
+    font-size: 18px;
+    margin: 10px 0;
+    color: black;
+}
+
+.testimonial .author {
+    font-size: 16px;
+    font-style: italic;
+    text-align: right;
+    color: black;
+}
+
+.share-experience {
+    text-align: center;
+    margin-top: 48px;
+}
+
+.share-experience h3 {
+    font-size: 38px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.share-experience p {
+    font-size: 22px;
+    color: black;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 5px;
+}
+
+.row {margin: 0 -5px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #444;
+  color: white;
+}
+
+.fa {font-size:50px;}

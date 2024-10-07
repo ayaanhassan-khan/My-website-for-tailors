@@ -1,7 +1,22 @@
-section#home .container:first-child {
+.container:first-child {
     width: 2500px;
 }
 
-section#home h1 {
+h1 {
     margin: 100px 0;
+}
+
+section .btn {
+    width: 130px;
+    transition: all 1s !important;
+}
+
+section .btn:hover {
+    width: 170px;
+}
+
+section button a,
+section button a:hover {
+    color: white;
+    text-decoration: none !important;
 }

@@ -1,0 +1,29 @@
+.login-container {
+    height: 491px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .card {
+    background-color: rgba(255, 255, 255, 0.582);
+}
+
+section .card button {
+    width: 150px !important;
+    display: block;
+    margin: auto;
+    transition: all 1s;
+}
+
+section .card button:hover {
+    width: 100% !important;
+}
+
+.no-account {
+    font-size: 85%;
+}
+
+section .card .no-account a {
+    text-decoration: none;
+}

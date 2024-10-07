@@ -1,0 +1,8 @@
+.download__links a img {
+    width: 130px;
+    transition: all 1s;
+}
+
+.download__links a img:hover {
+    width: 149px;
+}
